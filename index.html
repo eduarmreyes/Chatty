@@ -20,7 +20,16 @@
     <style>
       textarea {
         height: 100%;
+        width: 98%;
+      }
+      .control-group input[type=text] {
         width: 100%;
+      }
+      .login-icon {
+        left: 66px;
+      }
+      .login-screen {
+        padding: 30px 30px 33px 149px;
       }
     </style>
   </head>
@@ -28,37 +37,27 @@
     <div class="container">
       <div class="demo-headline">
         <h1 class="demo-logo">
-          <div class="logo"></div>
-          Flat UI
-          <small>Free Web User Interface Kit</small>
+          CHATTY
+          <small>Free Web User Interface Chat</small>
         </h1>
       </div> <!-- /demo-headline -->
       <div class="login">
         <div class="login-screen">
           <div class="login-icon">
             <img src="images/login/icon.png" alt="Welcome to Mail App" />
-            <h4>Welcome to <small>Mail App</small></h4>
+            <h4>Welcome to <small>Chatty</small></h4>
           </div>
 
           <div class="login-form">
             <div class="control-group">
-              <input type="text" class="login-field" value="" placeholder="Enter your name" id="login-name" />
+              <input type="text" class="login-field" value="" placeholder="Write something" id="login-name" />
               <label class="login-field-icon fui-user" for="login-name"></label>
             </div>
 
-            <div class="control-group">
-              <input type="password" class="login-field" value="" placeholder="Password" id="login-pass" />
-              <label class="login-field-icon fui-lock" for="login-pass"></label>
-            </div>
-
-            <a class="btn btn-primary btn-large btn-block" href="#">Login</a>
-            <a class="login-link" href="#">Lost your password?</a>
+            <a class="btn btn-primary btn-large btn-block" href="#">Send</a>
+            <a class="show-around" href="#">New here? Let me show you around</a>
+            <textarea id="chat-log" cols="10" rows="10"></textarea>
           </div>
-        </div>
-      </div>
-      <div class="login">
-        <div class="login-screen">
-          <textarea></textarea>
         </div>
       </div>
     </div> <!-- /container -->
@@ -87,6 +86,7 @@
           /* Act on the event */
           if ($("#login-name").val() != "") {
             conn.send($("#login-name").val());
+            $("#chat-log").append("Me: " + $("#login-name").val() + "\n");
             $("#login-name").val("");
           } else {
             console.log("Nothing to send...");

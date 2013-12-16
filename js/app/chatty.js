@@ -4,5 +4,6 @@ conn.onopen = function(e) {
 };
 
 conn.onmessage = function(e) {
-    console.log(e.data);
+	console.log(e);
+    $("#chat-log").append("The other guy: " + e.data + "\n");
 };
