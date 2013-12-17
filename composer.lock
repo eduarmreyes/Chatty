@@ -3,33 +3,33 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f3eac9fabda4f3f202290354e22c36fa",
+    "hash": "2cd178540a858ae6656e9ce2eb0cc321",
     "packages": [
         {
             "name": "cboden/ratchet",
-            "version": "v0.3.0",
+            "version": "v0.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cboden/Ratchet.git",
-                "reference": "d756e0b507a5f3cdbf8c59dbb7baf68574dc7d58"
+                "reference": "ebd17c6675b51044e711a1089b1534fd8c68c9e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cboden/Ratchet/zipball/d756e0b507a5f3cdbf8c59dbb7baf68574dc7d58",
-                "reference": "d756e0b507a5f3cdbf8c59dbb7baf68574dc7d58",
+                "url": "https://api.github.com/repos/cboden/Ratchet/zipball/ebd17c6675b51044e711a1089b1534fd8c68c9e0",
+                "reference": "ebd17c6675b51044e711a1089b1534fd8c68c9e0",
                 "shasum": ""
             },
             "require": {
                 "guzzle/http": ">=3.6.0,<3.8.0-dev",
-                "php": ">=5.3.9",
-                "react/socket": "0.3.*",
-                "symfony/http-foundation": "~2.2",
-                "symfony/routing": "~2.2"
+                "php": ">=5.3.3",
+                "react/socket": ">=0.2.0,<0.4.0-dev",
+                "symfony/http-foundation": "~2.1"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Ratchet": "src"
+                    "Ratchet": "src",
+                    "Ratchet\\Tests": "tests"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -52,7 +52,7 @@
                 "server",
                 "sockets"
             ],
-            "time": "2013-10-14 14:38:12"
+            "time": "2013-09-20 00:55:12"
         },
         {
             "name": "evenement/evenement",
@@ -525,72 +525,6 @@
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
             "time": "2013-11-28 10:27:26"
-        },
-        {
-            "name": "symfony/routing",
-            "version": "v2.4.0",
-            "target-dir": "Symfony/Component/Routing",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Routing.git",
-                "reference": "a7a665e2a0e3a203ca9a690c021066e76295bf6a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/a7a665e2a0e3a203ca9a690c021066e76295bf6a",
-                "reference": "a7a665e2a0e3a203ca9a690c021066e76295bf6a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "doctrine/annotations": "~1.0",
-                "psr/log": "~1.0",
-                "symfony/config": "~2.2",
-                "symfony/expression-language": "~2.4",
-                "symfony/yaml": "~2.0"
-            },
-            "suggest": {
-                "doctrine/annotations": "For using the annotation loader",
-                "symfony/config": "For using the all-in-one router or any loader",
-                "symfony/expression-language": "For using expression matching",
-                "symfony/yaml": "For using the YAML loader"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Routing\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Routing Component",
-            "homepage": "http://symfony.com",
-            "keywords": [
-                "router",
-                "routing",
-                "uri",
-                "url"
-            ],
-            "time": "2013-11-22 17:42:00"
         }
     ],
     "packages-dev": [

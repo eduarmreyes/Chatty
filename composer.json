@@ -1,10 +1,10 @@
 {
-	"autoload": {
-		"psr-0": {
-			"Chatty": "src"
-		}
-	},
+    "autoload": {
+        "psr-0": {
+            "Chatty": "src"
+        }
+    },
     "require": {
-        "cboden/Ratchet": "0.3.*"
+        "cboden/Ratchet": "0.2.*"
     }
 }
